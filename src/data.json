@@ -1,0 +1,229 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "email": "j@email.com",
+      "phone": "177 333 333 333",
+      "pic": "https://link",
+      "age": "22",
+      "city": "Munich",
+      "password": "12345678"
+    },
+    {
+      "id": 2,
+      "name": "Lily",
+      "email": "lily@email.com",
+      "phone": "177 222 333 333",
+      "pic": "https://link2",
+      "age": "18",
+      "city": "Munich",
+      "password": "1234567890"
+    },
+    {
+      "id": 3,
+      "name": "Lucy",
+      "email": "lulu@email.com",
+      "phone": "177 222 344 333",
+      "pic": "https://link3",
+      "age": "20",
+      "city": "Munich",
+      "password": "012345678"
+    },
+    {
+      "id": 4,
+      "name": "Addy",
+      "email": "addy@email.com",
+      "phone": "177 222 344 009",
+      "pic": "https://link4",
+      "age": "17",
+      "city": "Munich",
+      "password": "12345"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "userId": 1,
+      "pic": "https://linke1",
+      "name": "Music festival",
+      "date": "6",
+      "month": "7",
+      "start": "18:00",
+      "end": "22:00",
+      "location": "Balanstr",
+      "seats": 55,
+      "taken": 0,
+      "price": "12",
+      "description": "fadkjads fdaskldafjs kljasfd klj asfd;lkj ",
+      "minAge": "18"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "pic": "https://linke2",
+      "name": "Black and White Rarty",
+      "date": "30",
+      "month": "6",
+      "start": "18:00",
+      "end": "23:00",
+      "location": "Rimmerplatz",
+      "seats": 40,
+      "taken": 0,
+      "price": "20",
+      "description": "fadkjads fdaskldafj;lkjhtrsf7utf7tuytuyyyghgythghtyhuiltufuyfv ",
+      "minAge": "18"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "pic": "https://linke3",
+      "name": "Cinema OpenAir",
+      "date": "2",
+      "month": "7",
+      "start": "13:00",
+      "end": "17:00",
+      "location": "Olympia Park",
+      "seats": 120,
+      "taken": 0,
+      "price": "5",
+      "description": "fadkjads f=spdkojkhfifrhhrehrehe rehuhrfhuhuf fru dewrfhrui hf reui h rfuwiu grewuifhewiuf ergwhqifuewufewhh mhgfc ",
+      "minAge": "0"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "pic": "https://linke4",
+      "name": "UniParty",
+      "date": "5",
+      "month": "7",
+      "start": "18:00",
+      "end": "00:00",
+      "location": "TUM main campus",
+      "seats": 60,
+      "taken": 0,
+      "price": "0",
+      "description": "fadkjadftdrttfyft fttfutfyufguyg ugyyfyyyyi yfyyfty",
+      "minAge": "16"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "pic": "https://linke5",
+      "name": "Summer fest",
+      "date": "23",
+      "month": "7",
+      "start": "12:00",
+      "end": "22:00",
+      "location": "Odeonsplatz",
+      "price": "0",
+      "description": "fadkjads fdaskldafjs kljasfd klj asfd;lkj ",
+      "minAge": "0"
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "pic": "https://linke6",
+      "name": "Pool party",
+      "date": "7",
+      "month": "7",
+      "start": "17:00",
+      "end": "00:00",
+      "location": "Arcissstr",
+      "seats": 20,
+      "taken": 0,
+      "price": "10",
+      "description": "fadkjads fdaskldafjs kjhgfdrsedrtgy tfdrtcftrxercrxrextydyu rdrdxf",
+      "minAge": "16"
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "pic": "https://linke7",
+      "name": "Music Concert",
+      "date": "2",
+      "month": "7",
+      "start": "19:00",
+      "end": "22:00",
+      "location": "Munich Opera",
+      "seats": 80,
+      "taken": 0,
+      "price": "35",
+      "description": "fadkjads fdaskldanjbgvcfgb huugvyuf fjs kljasfd klj asfd;lkj ",
+      "minAge": "0"
+    }
+  ],
+  "orders": [
+    {
+      "eventId": 1,
+      "id": 1,
+      "clientName": "Carla",
+      "seats": 4,
+      "age": "23",
+      "email": "c@email.com",
+      "total": "48",
+      "payment": "Paypal"
+    },
+    {
+      "eventId": 1,
+      "id": 2,
+      "clientName": "Milly",
+      "seats": 1,
+      "age": "20",
+      "email": "mm@email.com",
+      "total": "12",
+      "payment": "Paypal"
+    },
+    {
+      "eventId": 4,
+      "id": 1,
+      "clientName": "Liam",
+      "seats": 2,
+      "age": "17",
+      "email": "lll@email.com",
+      "total": "0",
+      "payment": " "
+    },
+    {
+      "eventId": 4,
+      "id": 2,
+      "clientName": "Carolina",
+      "seats": 1,
+      "age": "20",
+      "email": "c@email.com",
+      "total": "0",
+      "payment": " "
+    },
+    {
+        "eventId": 3,
+        "id": 1,
+        "clientName": "Amir",
+        "seats": 3,
+        "age": "28",
+        "email": "aaspmjhg@email.com",
+        "total": "15",
+        "payment": "Paypal"
+    },
+    {
+        "eventId": 3,
+        "id": 2,
+        "clientName": "Alice",
+        "seats": 2,
+        "age": "34",
+        "email": "alice@email.com",
+        "total": "10",
+        "payment": "Paypal"
+    },
+    {
+        "eventId": 3,
+        "id": 3,
+        "clientName": "Whu",
+        "seats": 1,
+        "age": "20",
+        "email": "whuwhu@email.com",
+        "total": "5",
+        "payment": "Paypal"
+    }
+  ],
+  "payments": ["CreditCard", "Paypal", "Bank transfer", "money gram", "Cash"]
+}
