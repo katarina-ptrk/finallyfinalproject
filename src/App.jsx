@@ -10,63 +10,38 @@ import LogIn from './pages/LogIn';
 import SignUp from './pages/SignUp';
 import Preview from './pages/Preview';
 import UserPage from './pages/UserPage';
-import Footer from './components/Footer';
 import Header from './components/Header';
 import MyEvents from './pages/MyEvents';
 import data from "./data.json"
 
 
-
-
-
-
 function App() {
-const [user, setUser] = useState()
-const navigate = useNavigate()
-const submitHandler = (e) => {
-  e.preventDefault()
-  const email = e.target.email.value;
-  const password = e.target.password.value;
-  const person = data.users.find((i) => i.email == email)
-  if (person) {
-    if (person.password == password) {
-      setuser(person);
-      navigate('/')
-      //  LOOK HERE!!!!!!!!!!!!!
-
-    } else {
-      console.log("wrong password");
-    }
-  } else {
-    console.log("person not found");
-  }
-}
+  const [user, setUser] = useState()
   return (
     <>
-    <Header user={user}/>
+    
       <Routes>
-        <Route path="/" element={<Homepage />}>
+        <Route path="/" element={[<Header user={user}/>, <Homepage />]}>
         </Route>
-        <Route path="/create" element={<Create />}>
+        <Route path="/create" element={[<Header user={user}/>, <Create />]}>
         </Route>
-        <Route path="/event" element={<Event />}>
+        <Route path="/event" element={[<Header user={user}/>,<Event />]}>
         </Route>
-        <Route path="/events" element={<Events />}>
+        <Route path="/events" element={[<Header user={user}/>,<Events />]}>
         </Route>
-        <Route path="/joinevent" element={<JoinEvent />}>
+        <Route path="/joinevent" element={[<Header user={user}/>,<JoinEvent />]}>
         </Route>
-        <Route path="/login" element={<LogIn />}>
+        <Route path="/login" element={<LogIn user={user} setUser={setUser} />}>
         </Route>
         <Route path="/signup" element={<SignUp />}>
         </Route>
-        <Route path="/preview" element={<Preview />}>
+        <Route path="/preview" element={[<Header user={user}/>,<Preview />]}>
         </Route>
-        <Route path="/userpage" element={<UserPage />}>
+        <Route path="/userpage" element={[<Header user={user}/>,<UserPage />]}>
         </Route>
-        <Route path="/myevents" element={<MyEvents />}>
+        <Route path="/myevents" element={[<Header user={user}/>,<MyEvents />]}>
         </Route>
       </Routes>
-      <Footer/>
     
     </>
   )

@@ -5,10 +5,10 @@
       "name": "John",
       "email": "j@email.com",
       "phone": "177 333 333 333",
-      "pic": "https://link",
+      "pic": "",
       "age": "22",
       "city": "Munich",
-      "password": "12345678"
+      "password": "xxxx"
     },
     {
       "id": 2,
@@ -35,7 +35,7 @@
       "name": "Addy",
       "email": "addy@email.com",
       "phone": "177 222 344 009",
-      "pic": "https://link4",
+      "pic": "",
       "age": "17",
       "city": "Munich",
       "password": "12345"
