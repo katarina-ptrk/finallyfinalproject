@@ -19,15 +19,39 @@ function Homepage({user}) {
       </div>
       <div className='wrap'>
         <p className='block'>Today:</p>
-              <div className='wrapDetail'>
-                <Link className='noneDec' to={"/event"}><img className='heightWenig' src="https://images.unsplash.com/photo-1546484488-2a1430996887?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvb2wlMjBwYXJ0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" /></Link>
-              </div>
-              <div className='wrapDetail'>
-                <Link className='noneDec' to={"/event"}><img className='heightWenig' src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhcnR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="" /></Link>
-              </div>
-              <div className='wrapDetail'>
-                <Link className='noneDec' to={"/event"}><img className='heightWenig' src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBhcnR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="" /></Link>
-              </div>
+             
+        <div className="flexWrap">
+        <Link to={"/event"}><div className="card">
+         <img className="heightWenig" src="https://ik.imagekit.io/dwkgmo50n/cassie-gallegos-i-VetqrMmNY-unsplash.jpg?updatedAt=1688037522093" alt="" />
+         <div className="textCard">
+        <h3>Pool party</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae iste ea blanditiis ipsam voluptate nostrum nobis ullam ratione esse, aliquid iure vitae assumenda.</p>
+        <div className="amount">
+        <p>0/34</p><ion-icon name="people-outline"></ion-icon>
+        </div>
+        </div>
+      </div></Link>
+      <Link to={"/event"}><div className="card">
+         <img className="heightWenig" src="https://ik.imagekit.io/dwkgmo50n/kelsey-chance-tAH2cA_BL5g-unsplash.jpg?updatedAt=1688037520914" alt="" />
+         <div className="textCard">
+        <h3>Feel the wine</h3>
+        <p>Lorem ipsum dolor sitkjadfius elit. Recusandae iste ea blanditiis ipsam voluptate nostrum nobis ullam ratione esse, aliquid iure vitae assumenda.</p>
+        <div className="amount">
+        <p>0/25</p><ion-icon name="people-outline"></ion-icon>
+        </div>
+        </div>
+      </div></Link>
+      <Link to={"/event"}><div className="card">
+         <img className="heightWenig" src="https://ik.imagekit.io/dwkgmo50n/mathilde-langevin-PiwXpD3-Hbs-unsplash.jpg?updatedAt=1688048111535" alt="" />
+         <div className="textCard">
+        <h3>Picnic</h3>
+        <p>Lorem ipsum dolor sit, Lorem ipsum dolor sit amet. Lorem, ipsum. Recusandae iste ea blanditiis ipsam voluptate nostrum nobis ullam ratione esse, aliquid iure vitae assumenda.</p>
+        <div className="amount">
+        <p>0/12</p><ion-icon name="people-outline"></ion-icon>
+        </div>
+        </div>
+      </div></Link>
+    </div>
             </div>
             <footer className='darkeeer'>
       <p>Copyright © 2023 - All right reserved

@@ -9,7 +9,6 @@ import JoinEvent from "./pages/JoinEvent";
 import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
 import Preview from "./pages/Preview";
-import UserPage from "./pages/UserPage";
 import Header from "./components/Header";
 import MyEvents from "./pages/MyEvents";
 import data from "./data.json";
@@ -47,10 +46,6 @@ function App() {
         <Route
           path="/preview"
           element={ <Preview />}
-        ></Route>
-        <Route
-          path="/userpage"
-          element={ <UserPage />}
         ></Route>
         <Route
           path="/myevents"
