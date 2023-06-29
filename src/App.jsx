@@ -28,16 +28,16 @@ function App() {
     <>
 
       <Routes>
-        <Route path="/" element={[<Header user={user} />, <Homepage />]}></Route>
-        <Route path="/create" element={[<Header user={user} />, <Create />]}></Route>
-        <Route path="/event" element={[<Header user={user} />, <Event />]}></Route>
+        <Route path="/" element={<Homepage user={user} />}></Route>
+        <Route path="/create" element={ <Create user={user} />}></Route>
+        <Route path="/event" element={ <Event />}></Route>
         <Route
           path="/events"
-          element={[<Header user={user} />, <Events />]}
+          element={ <Events />}
         ></Route>
         <Route
           path="/joinevent"
-          element={[<Header user={user} />, <JoinEvent />]}
+          element={ <JoinEvent />}
         ></Route>
         <Route
           path="/login"
@@ -46,15 +46,15 @@ function App() {
         <Route path="/signup" element={<SignUp />}></Route>
         <Route
           path="/preview"
-          element={[<Header user={user} />, <Preview />]}
+          element={ <Preview />}
         ></Route>
         <Route
           path="/userpage"
-          element={[<Header user={user} />, <UserPage />]}
+          element={ <UserPage />}
         ></Route>
         <Route
           path="/myevents"
-          element={[<Header user={user} />, <MyEvents />]}
+          element={ <MyEvents />}
         ></Route>
       </Routes>
     </>
