@@ -12,7 +12,7 @@ function Header({user}) {
    
     <div className="dropdown dropdown-end">
       {user ? <div>
-        
+        <p className='userName1'>{user && user.name}</p>
       </div> : 
       <Link to={"/login"}><button class="button btn1">log in</button></Link>}
     </div>

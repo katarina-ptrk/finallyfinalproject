@@ -14,9 +14,6 @@ useEffect(() => {
     <div className='createpage'>
     <Link to={"/"}><h1 className='eventlogo'>Events</h1></Link>
     <p className='bigger'>Create your event! <sup className='bigger1'>^-^</sup></p>
-    <div className='addAphoto'>
-      <p className='centerCreate'>+</p>
-    </div>
     <div className='fileContainer'>
     <input type="file" name="" className='hhhh' id="" />
     </div>

@@ -12,7 +12,6 @@
     height: fit-content;
     min-height: 100vh;
     position: relative;
-    width: 100vw;
     color: rgb(245, 243, 238);
     background-color: rgb(48, 48, 48);
     padding-bottom: 80px;
@@ -173,7 +172,7 @@
 .homepagepage {
     color: rgb(201, 192, 183);
     background-color: rgb(224, 216, 208);
-    width: 100vw;
+    overflow-x: hidden;
 }
 .homepageImg {
     position: relative;
@@ -281,12 +280,19 @@
     font-size: 25px;
     color: #292828;
   }
+  .userName1 {
+    filter: brightness(110%);
+    margin-right: 20px;
+    margin-top: -20px;
+    font-size: 20px ;
+  }
 
   /* CREATEPAGE */
   .createpage {
     background-color: rgb(229, 221, 214);
-    width: 100vw;
     height: fit-content;
+    min-height: 100vh;
+    width: 100%;
   }
   .addAphoto {
     display: flex;
@@ -297,20 +303,41 @@
     height: 230px;
     justify-content: center;
     align-items: center;
-
+    z-index: -2;
   }
 
   .fileContainer {
-    width: 200px;
-    height: 200px;
+    position: relative;
+  }
+  .fileContainer::after {
+    content: "+";
+    margin-top: -20px;
+    font-size: 110px;
+    color: #84807d;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(212, 204, 197);
+    width: 80%;
+    height: 230px;
+    justify-content: center;
+    align-items: center;
+    margin-top:-200px;
   }
 
-  .hhhh {
-    background-color: gray;
-    text-indent: -999em;
+  .hhhh { text-indent: -999em;
         outline: none;
-        width: 100%;
-        height: 100%;
+        /* display: flex; */
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(212, 204, 197);
+        width: 80%;
+        height: 230px;
+        justify-content: center;
+        align-items: center;
+        margin-top:-200px;
+        /* margin-left: 730px; */
+      background: transparent;
   }
   .bigger {
     font-size: 25px;
@@ -407,13 +434,18 @@ color: #dfd7d0;
       .btn1 {
         width: 120px;
       }
+      .inputCreate {
+        width: 65%;
+      }
+      .inputsCreate p {
+        margin-left: 15%;
+      }
+      .btn4 {
+        width: 140px;
+      }
 }
 @media screen and (min-width: 1000px) {
-    footer {
-        right: 0px;
-        margin-right: 10px;
-    }
-    .right {
-        text-align: right;
+    .footer {
+        display: block;
     }
 }
