@@ -17,7 +17,7 @@ function Events() {
       <p className="bigger big2"> Join your party!</p>
       <div className="flexWrap">
 
-      {events && events.map(i => <div className="card">
+      {/* {events && events.map(i => <div className="card">
             <img
               className="heightWenig"
               src="https://ik.imagekit.io/dwkgmo50n/cassie-gallegos-i-VetqrMmNY-unsplash.jpg?updatedAt=1688037522093"
@@ -35,7 +35,7 @@ function Events() {
                 <ion-icon name="people-outline"></ion-icon>
               </div>
             </div>
-          </div>)}
+          </div>)} */}
 
         {/* hardcoded events.. */}
         <Link to={"/event"}>

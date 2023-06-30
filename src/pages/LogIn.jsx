@@ -18,6 +18,7 @@ const log = (e) => {
 
     } else {
       console.log("wrong password");
+      alert("wrong password")
     }
   } else {
     console.log("person not found");

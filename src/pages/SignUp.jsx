@@ -9,7 +9,7 @@ function SignUp() {
     e.preventDefault()
 
     if (e.target.password.value != e.target.password2.value){
-      alert("Passwrod dfssdfaadsf")
+      alert("Password incorrect")
     }else {
       axios.post("https://backendjson-7cnw.onrender.com/users", {
         name: "user",
